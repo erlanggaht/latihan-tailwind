@@ -1,0 +1,55 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn-nav-active > span:nth-child(1){
+    transform: rotate(64deg) translateY(2px) translateX(5px);
+    transform-origin: center center;
+
+}
+.btn-nav-active > span:nth-child(2){
+    transform: scale(0)
+}
+.btn-nav-active > span:nth-child(3){
+    transform: rotate(-64deg) translateY(-4px) translateX(8px); ;
+    transform-origin: center center ;
+}
+
+#btn-nav > span {
+    transition: all ease-in-out .4s;
+}
+
+#ul {
+    padding-right: 7rem;
+    padding-left: 7px;
+    padding-top:.2rem;
+    padding-bottom:.2rem
+}
+
+#CardProfile {
+    scroll-snap-type: x mandatory;
+    scrollbar-width:thin;
+    position: relative;
+    scrollbar-gutter: stable
+}
+
+.logoFooter {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 39px;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.39) -4px 2px 4px;
+}
+
+#contactList li {
+    display: flex;
+    align-items: center;
+    gap:7px
+}
+
