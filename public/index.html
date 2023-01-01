@@ -33,7 +33,12 @@ body{
    flex : 0 0 100%
  }
 
-
+ @media screen and (max-width:810px) {
+    #listNav {
+      display: block;
+    }
+   
+ }
  
     </style>
   </head>
@@ -47,11 +52,11 @@ body{
     </section> -->
     <section class="befsection after:content-[''] after:bg-hero after:-z-20 after:absolute after:w-full after:top-0 after:bg-bottom after:bg-cover after:h-full  relative">
       <div id="head">
-        <nav class="bg-transparent relative z-30 p-2 animate__animated animate__fadeInUp animate__delay-0.8s py-10 sm:py-0">
-          <div
-            class="flex py-3 px-4 justify-between sm:py-8 sm:px-10 gap-4 sm:flex-nowrap">
+         <nav class="bg-transparent relative z-30 p-2 animate__animated animate__fadeInUp animate__delay-0.8s py-10 sm:py-0">
+          <div id="listNav"
+            class="flex justify-between py-3 px-4 sm:py-8 sm:px-10">
             <div
-              class="text-2xl font-semibold spacing text-slate-50 sm:text-3xl transition-all w-full sm:text-left"
+              class="text-2xl font-semibold spacing text-slate-50 sm:text-3xl transition-all sm:text-left inline"
             >
               <span id="titleErlangga" class="text-4xl font-bold tracking-normal drop-shadow-lg font-Poppins">./Erlangga</span>
             </div>
@@ -61,7 +66,7 @@ body{
               <span class="w-[27px] h-[3px] bg-slate-50"></span>
             </div>
           
-            <ul id="ul" class="nav-no-filter gap-5 font-thin text-slate-50  sm:items-center sm:flex-row mt-1 sm:flex-nowrap sm:text-xl text-md drop-shadow-md font-bold  absolute right-6 top-24 sm:static z-50 transition-all ease-in-out duration-[.6s] sm:scale-[1] bg-green-600 shadow-md sm:bg-inherit shadow-inherit sm:h-[inherit] flex-col grow ">
+            <ul id="ul" class="nav-no-filter gap-5 font-thin text-slate-50 flex sm:items-center sm:flex-row mt-1 md:flex-nowrap sm:text-xl text-md drop-shadow-md font-bold  absolute right-6 top-24 sm:static z-50 transition-all ease-in-out duration-[.6s] sm:scale-[1] bg-green-600 shadow-md sm:bg-inherit shadow-inherit sm:h-[inherit] flex-col">
               <li
                 class="hover:cursor-pointer hover:text-lime-50 transition-all hover:scale-105"
               >
